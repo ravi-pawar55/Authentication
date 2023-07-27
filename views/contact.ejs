@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="min-w-screen min-h-screen bg-gray-900 flex flex-col ">
+    <!-- Navbar -->
+    <div class="bg-gray-800 text-white p-4 flex justify-between ">
+        <div class="flex justify-start gap-4">
+            <div class="flex items-center">
+                <a href="/" class="font-bold text-xl">Home</a>
+            </div>
+            <div class="flex items-center">
+                <a href="/about" class="font-bold text-xl">About</a>
+            </div>
+            <div class="flex items-center">
+                <a href="/contact" class="font-bold text-xl">Contact</a>
+            </div>
+            <div class="flex items-center">
+                <a href="/support" class="font-bold text-xl">Support</a>
+            </div>
+        </div>
+        <div class="flex justify-end">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-full bg-gray-500 mr-2">
+                     <img src="https://tse1.mm.bing.net/th?id=OIP.k7dE2dftQijg3KbpTyIObAHaHa&pid=Api&rs=1&c=1&qlt=95&w=120&h=120" alt="Avatar" class="w-full h-full rounded-full">
+                </div>
+                <span class="mr-2 "><%= userName %></span>
+                <button class="bg-white-600 hover:bg-red-700 px-3 py-2 border-2 rounded " onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-10">
+       <h1 class="text-white text-5xl">Contacts Page</h1>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+<style>@import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css')</style>
+</body>
+</html>
